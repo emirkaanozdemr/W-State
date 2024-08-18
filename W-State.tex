@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+
+The W state is given by:
+
+\[
+\ket{W} = \frac{1}{\sqrt{3}} \left( \ket{001} + \ket{010} + \ket{100} \right)
+\]
+
+Let's verify that this state is normalized.
+
+To show that the state is normalized, we need to calculate the inner product of the state with itself and show that it equals 1:
+
+\[
+\langle W | W \rangle = \left( \frac{1}{\sqrt{3}} (\langle 001 | + \langle 010 | + \langle 100 |) \right) \left( \frac{1}{\sqrt{3}} (\ket{001} + \ket{010} + \ket{100}) \right)
+\]
+
+Expanding this:
+
+\[
+\langle W | W \rangle = \frac{1}{3} \left( \langle 001 | 001 \rangle + \langle 001 | 010 \rangle + \langle 001 | 100 \rangle + \langle 010 | 001 \rangle + \langle 010 | 010 \rangle + \langle 010 | 100 \rangle + \langle 100 | 001 \rangle + \langle 100 | 010 \rangle + \langle 100 | 100 \rangle \right)
+\]
+
+Since \(\langle ijk | ijk \rangle = 1\) and \(\langle ijk | lmn \rangle = 0\) for \(ijk \ne lmn\):
+
+\[
+\langle W | W \rangle = \frac{1}{3} \left( 1 + 1 + 1 \right) = \frac{3}{3} = 1
+\]
+
+Thus, the state \(\ket{W}\) is normalized.
+
+\end{document}
